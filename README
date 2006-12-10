@@ -4,36 +4,39 @@ gThumb is an advanced image browser, viewer, organizer,
 and editor for the GNOME Desktop.
 
 Runtime requirements:
-  cygwin-1.5.19-4
-  GConf2-2.10.1-1
-  gtk2-x11-runtime-2.6.10-1
+  cygwin-1.5.22-1
+  GConf2-2.16.0-1
+  gtk2-x11-2.10.6-1
+  libXrender1-0.9.2-1
+  libXtst6-1.0.1-1
   libart_lgpl2-2.3.17-1
   libexif-0.6.12-1
-  libglade2-2.5.1-1
-  libgnomecanvas2-2.12.0-1
+  libglade2-2.6.0-1
+  libgnomecanvas2-2.14.0-1
   libgnomeprint22-2.12.1-2
   libgnomeprintui22-2.12.1-1
-  libgnomeui2-2.12.1-1
-  libpng12-1.2.8-2
-  libtiff5-3.7.3-1
-  xorg-x11-bin-dlls-6.8.2.0-1
+  libgnomeui2-2.16.1-1
+  libgphoto2-2.2.1-2
+  libtiff5-3.8.2-3
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.19-4
-  autoconf2.5-2.59-3
+  cygwin-1.5.22-1
+  autoconf2.5-2.60-2
   automake1.9-1.9.6-1
-  binutils-20050610-1
-  bison-20030307-1
-  flex-2.5.4a-3
-  gawk-3.1.5-1
+  binutils-20060817-1
+  bison-2.3-1
+  cygport-0.2.7-1
+  flex-2.5.33-1
+  gawk-3.1.5-2
   gcc-core-3.4.4-1
-  intltool-0.34.2-1
-  libtool1.5-1.5.20-2
-  make-3.80-1
-  pkgconfig-0.17.2-2
+  gnome-common-2.12.0-1
+  intltool-0.35.1-1
+  libtool1.5-1.5.23a-1
+  make-3.81-1
+  pkg-config-0.21-1
   scrollkeeper-0.3.14-2
-  sed-4.1.4-1
+  sed-4.1.5-2
 
 Canonical homepage:
   http://gthumb.sourceforge.net/
@@ -44,15 +47,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gthumb-2.6.9-1-src.tar.bz2
+  unpack gthumb-2.8.1-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  ./gthumb-2.6.9-1.sh all
+  cygport ./gthumb-2.8.1-1.cygport all
 
 This will create:
-  /usr/src/gthumb-2.6.9-1-src.tar.bz2
-  /usr/src/gthumb-2.6.9-1.tar.bz2
+  /usr/src/gthumb-2.8.1-1-src.tar.bz2
+  /usr/src/gthumb-2.8.1-1.tar.bz2
 
 -------------------------------------------
 
@@ -61,8 +64,9 @@ Files included in the binary package:
   /etc/gconf/schemas/gthumb.schemas
   /etc/postinstall/gthumb.sh
   /etc/preremove/gthumb.sh
-  /usr/bin/cyggthumb-2-6-9.dll
+  /usr/bin/cyggthumb.dll
   /usr/bin/gthumb.exe
+  /usr/lib/bonobo/servers/GNOME_GThumb.server
   /usr/lib/bonobo/servers/GNOME_GThumb_CatalogView.server
   /usr/lib/bonobo/servers/GNOME_GThumb_Viewer.server
   /usr/lib/gthumb/gthumb-catalog-view.exe
@@ -83,38 +87,22 @@ Files included in the binary package:
   /usr/lib/libgthumb.la
   /usr/share/application-registry/gthumb.applications
   /usr/share/applications/gthumb.desktop
-  /usr/share/doc/Cygwin/gthumb-2.6.9.README
-  /usr/share/doc/gthumb-2.6.9/AUTHORS
-  /usr/share/doc/gthumb-2.6.9/ChangeLog
-  /usr/share/doc/gthumb-2.6.9/COPYING
-  /usr/share/doc/gthumb-2.6.9/INSTALL
-  /usr/share/doc/gthumb-2.6.9/NEWS
-  /usr/share/doc/gthumb-2.6.9/README
-  /usr/share/doc/gthumb-2.6.9/TODO
+  /usr/share/doc/Cygwin/gthumb-2.8.1.README
+  /usr/share/doc/gthumb-2.8.1/AUTHORS
+  /usr/share/doc/gthumb-2.8.1/COPYING
+  /usr/share/doc/gthumb-2.8.1/ChangeLog
+  /usr/share/doc/gthumb-2.8.1/INSTALL
+  /usr/share/doc/gthumb-2.8.1/MAINTAINERS
+  /usr/share/doc/gthumb-2.8.1/NEWS
+  /usr/share/doc/gthumb-2.8.1/README
+  /usr/share/gnome-2.0/ui/GNOME_GThumb_CatalogView.xml
+  /usr/share/gnome-2.0/ui/GNOME_GThumb_Viewer.xml
   /usr/share/gnome/help/gthumb/C/figures/comment.png
   /usr/share/gnome/help/gthumb/C/figures/main-win.png
   /usr/share/gnome/help/gthumb/C/figures/nav-button.png
   /usr/share/gnome/help/gthumb/C/figures/preferences.png
   /usr/share/gnome/help/gthumb/C/gthumb.xml
   /usr/share/gnome/help/gthumb/C/legal.xml
-  /usr/share/gnome-2.0/ui/GNOME_GThumb_CatalogView.xml
-  /usr/share/gnome-2.0/ui/GNOME_GThumb_Viewer.xml
-  /usr/share/gthumb/albumthemes/BlueStripes/back.png
-  /usr/share/gthumb/albumthemes/BlueStripes/background.png
-  /usr/share/gthumb/albumthemes/BlueStripes/bottom.png
-  /usr/share/gthumb/albumthemes/BlueStripes/image.gthtml
-  /usr/share/gthumb/albumthemes/BlueStripes/index.gthtml
-  /usr/share/gthumb/albumthemes/BlueStripes/layout.css
-  /usr/share/gthumb/albumthemes/BlueStripes/left.png
-  /usr/share/gthumb/albumthemes/BlueStripes/next.png
-  /usr/share/gthumb/albumthemes/BlueStripes/prev.png
-  /usr/share/gthumb/albumthemes/BlueStripes/preview.png
-  /usr/share/gthumb/albumthemes/BlueStripes/right.png
-  /usr/share/gthumb/albumthemes/BlueStripes/style.css
-  /usr/share/gthumb/albumthemes/BlueStripes/thumbnail.gthtml
-  /usr/share/gthumb/albumthemes/BlueStripes/top.png
-  /usr/share/gthumb/albumthemes/BlueStripes/transparent.png
-  /usr/share/gthumb/albumthemes/BlueStripes/white-dot.png
   /usr/share/gthumb/albumthemes/Classic/1.gif
   /usr/share/gthumb/albumthemes/Classic/back.png
   /usr/share/gthumb/albumthemes/Classic/background.gif
@@ -145,22 +133,12 @@ Files included in the binary package:
   /usr/share/gthumb/albumthemes/ClassicClips/style.css
   /usr/share/gthumb/albumthemes/ClassicClips/thumbnail.gthtml
   /usr/share/gthumb/albumthemes/ClassicClips/top.png
-  /usr/share/gthumb/albumthemes/Clean/1.gif
-  /usr/share/gthumb/albumthemes/Clean/back.png
-  /usr/share/gthumb/albumthemes/Clean/background.gif
-  /usr/share/gthumb/albumthemes/Clean/bot.png
-  /usr/share/gthumb/albumthemes/Clean/image.gthtml
-  /usr/share/gthumb/albumthemes/Clean/index.gthtml
-  /usr/share/gthumb/albumthemes/Clean/layout.css
-  /usr/share/gthumb/albumthemes/Clean/left.png
-  /usr/share/gthumb/albumthemes/Clean/left_arrow.png
-  /usr/share/gthumb/albumthemes/Clean/preview.png
-  /usr/share/gthumb/albumthemes/Clean/right.png
-  /usr/share/gthumb/albumthemes/Clean/right_arrow.png
-  /usr/share/gthumb/albumthemes/Clean/style.css
-  /usr/share/gthumb/albumthemes/Clean/thumbnail.gthtml
-  /usr/share/gthumb/albumthemes/Clean/top.png
-  /usr/share/gthumb/albumthemes/Clean/up_arrow.png
+  /usr/share/gthumb/albumthemes/Flicker/image.gthtml
+  /usr/share/gthumb/albumthemes/Flicker/index.gthtml
+  /usr/share/gthumb/albumthemes/Flicker/layout.css
+  /usr/share/gthumb/albumthemes/Flicker/preview.png
+  /usr/share/gthumb/albumthemes/Flicker/style.css
+  /usr/share/gthumb/albumthemes/Flicker/thumbnail.gthtml
   /usr/share/gthumb/albumthemes/NeatRound/1.gif
   /usr/share/gthumb/albumthemes/NeatRound/back.png
   /usr/share/gthumb/albumthemes/NeatRound/background.gif
@@ -176,21 +154,12 @@ Files included in the binary package:
   /usr/share/gthumb/albumthemes/NeatRound/style.css
   /usr/share/gthumb/albumthemes/NeatRound/thumbnail.gthtml
   /usr/share/gthumb/albumthemes/NeatRound/top.png
-  /usr/share/gthumb/albumthemes/NeatSquare/1.gif
-  /usr/share/gthumb/albumthemes/NeatSquare/back.png
-  /usr/share/gthumb/albumthemes/NeatSquare/background.gif
-  /usr/share/gthumb/albumthemes/NeatSquare/bot.png
-  /usr/share/gthumb/albumthemes/NeatSquare/image.gthtml
-  /usr/share/gthumb/albumthemes/NeatSquare/index.gthtml
-  /usr/share/gthumb/albumthemes/NeatSquare/layout.css
-  /usr/share/gthumb/albumthemes/NeatSquare/left.png
-  /usr/share/gthumb/albumthemes/NeatSquare/next.png
-  /usr/share/gthumb/albumthemes/NeatSquare/prev.png
-  /usr/share/gthumb/albumthemes/NeatSquare/preview.png
-  /usr/share/gthumb/albumthemes/NeatSquare/right.png
-  /usr/share/gthumb/albumthemes/NeatSquare/style.css
-  /usr/share/gthumb/albumthemes/NeatSquare/thumbnail.gthtml
-  /usr/share/gthumb/albumthemes/NeatSquare/top.png
+  /usr/share/gthumb/albumthemes/Wiki/image.gthtml
+  /usr/share/gthumb/albumthemes/Wiki/index.gthtml
+  /usr/share/gthumb/albumthemes/Wiki/layout.css
+  /usr/share/gthumb/albumthemes/Wiki/preview.png
+  /usr/share/gthumb/albumthemes/Wiki/style.css
+  /usr/share/gthumb/albumthemes/Wiki/thumbnail.gthtml
   /usr/share/gthumb/glade/ftp-client-48.png
   /usr/share/gthumb/glade/gphoto-48.png
   /usr/share/gthumb/glade/gthumb.glade
@@ -213,7 +182,9 @@ Files included in the binary package:
   /usr/share/gthumb/icons/mirror.xpm
   /usr/share/gthumb/icons/rotate.png
   /usr/share/gthumb/icons/rotate.xpm
+  /usr/share/icons/hicolor/48x48/apps/gthumb.png
   /usr/share/locale/am/LC_MESSAGES/gthumb.mo
+  /usr/share/locale/ar/LC_MESSAGES/gthumb.mo
   /usr/share/locale/az/LC_MESSAGES/gthumb.mo
   /usr/share/locale/be/LC_MESSAGES/gthumb.mo
   /usr/share/locale/bg/LC_MESSAGES/gthumb.mo
@@ -221,14 +192,17 @@ Files included in the binary package:
   /usr/share/locale/cs/LC_MESSAGES/gthumb.mo
   /usr/share/locale/da/LC_MESSAGES/gthumb.mo
   /usr/share/locale/de/LC_MESSAGES/gthumb.mo
+  /usr/share/locale/dz/LC_MESSAGES/gthumb.mo
   /usr/share/locale/el/LC_MESSAGES/gthumb.mo
   /usr/share/locale/en_CA/LC_MESSAGES/gthumb.mo
   /usr/share/locale/en_GB/LC_MESSAGES/gthumb.mo
   /usr/share/locale/es/LC_MESSAGES/gthumb.mo
+  /usr/share/locale/et/LC_MESSAGES/gthumb.mo
   /usr/share/locale/eu/LC_MESSAGES/gthumb.mo
   /usr/share/locale/fi/LC_MESSAGES/gthumb.mo
   /usr/share/locale/fr/LC_MESSAGES/gthumb.mo
   /usr/share/locale/ga/LC_MESSAGES/gthumb.mo
+  /usr/share/locale/gl/LC_MESSAGES/gthumb.mo
   /usr/share/locale/gu/LC_MESSAGES/gthumb.mo
   /usr/share/locale/hi/LC_MESSAGES/gthumb.mo
   /usr/share/locale/hr/LC_MESSAGES/gthumb.mo
@@ -243,9 +217,9 @@ Files included in the binary package:
   /usr/share/locale/ml/LC_MESSAGES/gthumb.mo
   /usr/share/locale/ms/LC_MESSAGES/gthumb.mo
   /usr/share/locale/nb/LC_MESSAGES/gthumb.mo
+  /usr/share/locale/ne/LC_MESSAGES/gthumb.mo
   /usr/share/locale/nl/LC_MESSAGES/gthumb.mo
   /usr/share/locale/nn/LC_MESSAGES/gthumb.mo
-  /usr/share/locale/no/LC_MESSAGES/gthumb.mo
   /usr/share/locale/pa/LC_MESSAGES/gthumb.mo
   /usr/share/locale/pl/LC_MESSAGES/gthumb.mo
   /usr/share/locale/pt/LC_MESSAGES/gthumb.mo
@@ -257,19 +231,23 @@ Files included in the binary package:
   /usr/share/locale/sr/LC_MESSAGES/gthumb.mo
   /usr/share/locale/sr@Latn/LC_MESSAGES/gthumb.mo
   /usr/share/locale/sv/LC_MESSAGES/gthumb.mo
+  /usr/share/locale/th/LC_MESSAGES/gthumb.mo
   /usr/share/locale/tr/LC_MESSAGES/gthumb.mo
   /usr/share/locale/uk/LC_MESSAGES/gthumb.mo
+  /usr/share/locale/vi/LC_MESSAGES/gthumb.mo
   /usr/share/locale/xh/LC_MESSAGES/gthumb.mo
   /usr/share/locale/zh_CN/LC_MESSAGES/gthumb.mo
+  /usr/share/locale/zh_HK/LC_MESSAGES/gthumb.mo
   /usr/share/locale/zh_TW/LC_MESSAGES/gthumb.mo
   /usr/share/man/man1/gthumb.1.gz
   /usr/share/omf/gthumb/gthumb-C.omf
-  /usr/share/pixmaps/gthumb-logo.png
-  /usr/share/pixmaps/gthumb.png
 
 ------------------
 
 Port Notes:
+
+----- version 2.8.1-1 -----
+Version bump.
 
 ----- version 2.6.9-1 -----
 Version bump.

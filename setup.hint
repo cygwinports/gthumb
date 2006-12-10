@@ -1,5 +1,5 @@
 category: Gnome Graphics
-requires: cygwin GConf2 gtk2-x11-runtime libart_lgpl2 libexif libglade2 libgnomecanvas2 libgnomeprint22 libgnomeprintui22 libgnomeui2 libpng12 libtiff5
+requires: cygwin GConf2 gtk2-x11 libXrender1 libXtst6 libart_lgpl2 libexif libglade2 libgnomecanvas2 libgnomeprint22 libgnomeprintui22 libgnomeui2 libgphoto2 libtiff5
 sdesc: "GNOME image browser, viewer, organizer, and editor"
 ldesc: "gThumb is a powerful image browser, viewer, organizer,
 and editor for the GNOME Desktop."
