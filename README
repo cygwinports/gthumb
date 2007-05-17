@@ -57,15 +57,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gthumb-2.10.2-1-src.tar.bz2
+  unpack gthumb-2.10.3-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gthumb-2.10.2-1.cygport all
+  cygport ./gthumb-2.10.3-1.cygport all
 
 This will create:
-  /usr/src/gthumb-2.10.2-1-src.tar.bz2
-  /usr/src/gthumb-2.10.2-1.tar.bz2
+  /usr/src/gthumb-2.10.3-1-src.tar.bz2
+  /usr/src/gthumb-2.10.3-1.tar.bz2
 
 -------------------------------------------
 
@@ -91,14 +91,14 @@ Files included in the binary package:
   /usr/lib/libgthumb.dll.a
   /usr/lib/libgthumb.la
   /usr/share/applications/gthumb.desktop
-  /usr/share/doc/Cygwin/gthumb-2.10.2.README
-  /usr/share/doc/gthumb-2.10.2/AUTHORS
-  /usr/share/doc/gthumb-2.10.2/COPYING
-  /usr/share/doc/gthumb-2.10.2/ChangeLog
-  /usr/share/doc/gthumb-2.10.2/INSTALL
-  /usr/share/doc/gthumb-2.10.2/MAINTAINERS
-  /usr/share/doc/gthumb-2.10.2/NEWS
-  /usr/share/doc/gthumb-2.10.2/README
+  /usr/share/doc/Cygwin/gthumb-2.10.3.README
+  /usr/share/doc/gthumb-2.10.3/AUTHORS
+  /usr/share/doc/gthumb-2.10.3/COPYING
+  /usr/share/doc/gthumb-2.10.3/ChangeLog
+  /usr/share/doc/gthumb-2.10.3/INSTALL
+  /usr/share/doc/gthumb-2.10.3/MAINTAINERS
+  /usr/share/doc/gthumb-2.10.3/NEWS
+  /usr/share/doc/gthumb-2.10.3/README
   /usr/share/gnome/help/gthumb/C/figures/comment.png
   /usr/share/gnome/help/gthumb/C/figures/main-win.png
   /usr/share/gnome/help/gthumb/C/figures/nav-button.png
@@ -259,6 +259,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 2.10.3-1 -----
+Version bump.
 
 ----- version 2.10.2-1 -----
 Version bump.
