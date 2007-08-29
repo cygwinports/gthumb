@@ -6,15 +6,15 @@ and editor for the GNOME Desktop.
 Runtime requirements:
   cygwin-1.5.24-2
   GConf2-2.18.0.1-1
-  gdk-pixbuf2-2.10.13-1
-  glib2-2.12.12-2
+  gdk-pixbuf2-2.10.14-1
+  glib2-2.12.13-1
   gnome-vfs2-2.18.1-1
-  gtk2-x11-2.10.13-1
-  libX11_6-1.1.1-1
+  gtk2-x11-2.10.14-1
+  libX11_6-1.1.3-1
   libXrender1-0.9.2-1
   libXtst6-1.0.1-1
   libart_lgpl2-2.3.19-1
-  libcairo2-1.4.8-1
+  libcairo2-1.4.10-1
   libexif12-0.6.16-1
   libglade2-2.6.1-1
   libgnome2-2.18.0-1
@@ -23,10 +23,10 @@ Runtime requirements:
   libgphoto2-2.2.1-2
   libintl8-0.15-1
   libjpeg62-6b-12
-  libpng12-1.2.12-1
+  libpng12-1.2.18-1
   libtiff5-3.8.2-3
-  libxml2-2.6.28-2
-  pango-1.16.4-1
+  libxml2-2.6.29-1
+  pango-1.16.5-1
 
 Build requirements:
 (besides corresponding -devel packages)
@@ -35,7 +35,7 @@ Build requirements:
   automake1.9-1.9.6-2
   binutils-20060817-1
   bison-2.3-1
-  cygport-0.2.11-1
+  cygport-0.3.5-1
   flex-2.5.33-1
   gawk-3.1.5-4
   gcc-core-3.4.4-3
@@ -57,15 +57,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gthumb-2.10.5-1-src.tar.bz2
+  unpack gthumb-2.10.6-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gthumb-2.10.5-1.cygport all
+  cygport ./gthumb-2.10.6-1.cygport all
 
 This will create:
-  /usr/src/gthumb-2.10.5-1-src.tar.bz2
-  /usr/src/gthumb-2.10.5-1.tar.bz2
+  /usr/src/gthumb-2.10.6-1-src.tar.bz2
+  /usr/src/gthumb-2.10.6-1.tar.bz2
 
 -------------------------------------------
 
@@ -91,14 +91,14 @@ Files included in the binary package:
   /usr/lib/libgthumb.dll.a
   /usr/lib/libgthumb.la
   /usr/share/applications/gthumb.desktop
-  /usr/share/doc/Cygwin/gthumb-2.10.5.README
-  /usr/share/doc/gthumb-2.10.5/AUTHORS
-  /usr/share/doc/gthumb-2.10.5/COPYING
-  /usr/share/doc/gthumb-2.10.5/ChangeLog
-  /usr/share/doc/gthumb-2.10.5/INSTALL
-  /usr/share/doc/gthumb-2.10.5/MAINTAINERS
-  /usr/share/doc/gthumb-2.10.5/NEWS
-  /usr/share/doc/gthumb-2.10.5/README
+  /usr/share/doc/Cygwin/gthumb-2.10.6.README
+  /usr/share/doc/gthumb-2.10.6/AUTHORS
+  /usr/share/doc/gthumb-2.10.6/COPYING
+  /usr/share/doc/gthumb-2.10.6/ChangeLog
+  /usr/share/doc/gthumb-2.10.6/INSTALL
+  /usr/share/doc/gthumb-2.10.6/MAINTAINERS
+  /usr/share/doc/gthumb-2.10.6/NEWS
+  /usr/share/doc/gthumb-2.10.6/README
   /usr/share/gnome/help/gthumb/C/figures/comment.png
   /usr/share/gnome/help/gthumb/C/figures/main-win.png
   /usr/share/gnome/help/gthumb/C/figures/nav-button.png
@@ -259,6 +259,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 2.10.6-1 -----
+Version bump.
 
 ----- version 2.10.5-1 -----
 Version bump.
