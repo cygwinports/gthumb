@@ -1,0 +1,6 @@
+inherit gnome2
+
+DESCRIPTION="GNOME image browser, viewer, organizer, and editor"
+HOMEPAGE="http://gthumb.sourceforge.net/"
+
+DIFF_EXCLUDES="gthumb-marshal.*"
