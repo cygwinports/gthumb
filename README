@@ -4,48 +4,50 @@ gThumb is an advanced image browser, viewer, organizer,
 and editor for the GNOME Desktop.
 
 Runtime requirements:
-  cygwin-1.5.25-7
-  GConf2-2.20.1-1
-  gdk-pixbuf2-2.12.5-1
-  glib2-2.14.5-1
-  gnome-vfs2-2.20.1-1
-  gtk2-x11-2.12.5-1
-  libX11_6-1.1.3-1
-  libXrender1-0.9.4-1
-  libXtst6-1.0.3-1
-  libart_lgpl2-2.3.19-1
-  libcairo2-1.4.12-1
+  cygwin-1.5.25-15
+  GConf2-2.22.0-1
+  gdk-pixbuf2-2.12.11-1
+  glib2-2.16.4-1
+  gnome-vfs2-2.22.0-1
+  gtk2-x11-2.12.11-1
+  libart_lgpl2-2.3.20-1
+  libbonobo2-2.22.0-1
+  libcairo2-1.6.4-1
   libexif12-0.6.16-2
   libglade2-2.6.2-1
-  libgnome2-2.20.1.1-1
+  libgnome2-2.22.0-1
   libgnomecanvas2-2.20.1.1-1
-  libgnomeui2-2.20.1.1-1
-  libgphoto2-2.2.1-2
+  libgnomeui2-2.22.1-1
+  libgphoto2-2.4.2-1
   libintl8-0.15-1
+  libiptcdata0-1.0.2-1
   libjpeg62-6b-12
-  libpng12-1.2.24-1
+  libpng12-1.2.29-1
   libtiff5-3.8.2-3
-  libxml2-2.6.30-1
-  pango-1.18.4-1
+  libX11_6-1.1.3-1
+  libxml2-2.6.32-1
+  libXrender1-0.9.4-1
+  libXtst6-1.0.3-1
+  ORBit2-2.14.13-1
+  pango-1.20.5-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.25-7
   autoconf2.5-2.61-1
-  automake1.10-1.10-1
-  binutils-20060817-1
+  automake1.10-1.10.1-1
+  binutils-20080523-2
   bison-2.3-1
-  cygport-0.3.5-1
+  cygport-0.3.12-1
   flex-2.5.34-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
-  gnome-common-2.20.0-1
-  gnome-doc-utils-0.12.0-1
-  intltool-0.36.3-1
-  libtool1.5-1.5.23a-2
+  gnome-common-2.20.0-2
+  gnome-doc-utils-0.12.2-1
+  intltool-0.40.3-1
+  libtool-2.2.2-2
   make-3.81-1
-  pkg-config-0.21-1
-  rarian-0.6.0-1
+  pkg-config-0.23a-2
+  rarian-0.8.0-1
   sed-4.1.5-2
 
 Canonical homepage:
@@ -57,15 +59,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gthumb-2.10.8-1-src.tar.bz2
+  unpack gthumb-2.10.9-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gthumb-2.10.8-1.cygport all
+  cygport ./gthumb-2.10.9-1.cygport all
 
 This will create:
-  /usr/src/gthumb-2.10.8-1-src.tar.bz2
-  /usr/src/gthumb-2.10.8-1.tar.bz2
+  /usr/src/gthumb-2.10.9-1-src.tar.bz2
+  /usr/src/gthumb-2.10.9-1.tar.bz2
 
 -------------------------------------------
 
@@ -76,6 +78,7 @@ Files included in the binary package:
   /etc/preremove/gthumb.sh
   /usr/bin/cyggthumb.dll
   /usr/bin/gthumb.exe
+  /usr/lib/bonobo/servers/GNOME_GThumb.server
   /usr/lib/gthumb/modules/cygduplicates.dll
   /usr/lib/gthumb/modules/cygjpegtran.dll
   /usr/lib/gthumb/modules/cygphotoimporter.dll
@@ -91,20 +94,29 @@ Files included in the binary package:
   /usr/lib/libgthumb.dll.a
   /usr/lib/libgthumb.la
   /usr/share/applications/gthumb.desktop
-  /usr/share/doc/Cygwin/gthumb-2.10.8.README
-  /usr/share/doc/gthumb-2.10.8/AUTHORS
-  /usr/share/doc/gthumb-2.10.8/COPYING
-  /usr/share/doc/gthumb-2.10.8/ChangeLog
-  /usr/share/doc/gthumb-2.10.8/INSTALL
-  /usr/share/doc/gthumb-2.10.8/MAINTAINERS
-  /usr/share/doc/gthumb-2.10.8/NEWS
-  /usr/share/doc/gthumb-2.10.8/README
+  /usr/share/doc/gthumb-2.10.9/AUTHORS
+  /usr/share/doc/gthumb-2.10.9/COPYING
+  /usr/share/doc/gthumb-2.10.9/ChangeLog
+  /usr/share/doc/gthumb-2.10.9/INSTALL
+  /usr/share/doc/gthumb-2.10.9/MAINTAINERS
+  /usr/share/doc/gthumb-2.10.9/NEWS
+  /usr/share/doc/gthumb-2.10.9/README
   /usr/share/gnome/help/gthumb/C/figures/comment.png
   /usr/share/gnome/help/gthumb/C/figures/main-win.png
   /usr/share/gnome/help/gthumb/C/figures/nav-button.png
   /usr/share/gnome/help/gthumb/C/figures/preferences.png
   /usr/share/gnome/help/gthumb/C/gthumb.xml
   /usr/share/gnome/help/gthumb/C/legal.xml
+  /usr/share/gnome/help/gthumb/es/figures/comment.png
+  /usr/share/gnome/help/gthumb/es/figures/main-win.png
+  /usr/share/gnome/help/gthumb/es/figures/nav-button.png
+  /usr/share/gnome/help/gthumb/es/figures/preferences.png
+  /usr/share/gnome/help/gthumb/es/gthumb.xml
+  /usr/share/gnome/help/gthumb/fr/figures/comment.png
+  /usr/share/gnome/help/gthumb/fr/figures/main-win.png
+  /usr/share/gnome/help/gthumb/fr/figures/nav-button.png
+  /usr/share/gnome/help/gthumb/fr/figures/preferences.png
+  /usr/share/gnome/help/gthumb/fr/gthumb.xml
   /usr/share/gnome/help/gthumb/sv/figures/comment.png
   /usr/share/gnome/help/gthumb/sv/figures/main-win.png
   /usr/share/gnome/help/gthumb/sv/figures/nav-button.png
@@ -217,6 +229,7 @@ Files included in the binary package:
   /usr/share/locale/ga/LC_MESSAGES/gthumb.mo
   /usr/share/locale/gl/LC_MESSAGES/gthumb.mo
   /usr/share/locale/gu/LC_MESSAGES/gthumb.mo
+  /usr/share/locale/he/LC_MESSAGES/gthumb.mo
   /usr/share/locale/hi/LC_MESSAGES/gthumb.mo
   /usr/share/locale/hr/LC_MESSAGES/gthumb.mo
   /usr/share/locale/hu/LC_MESSAGES/gthumb.mo
@@ -254,11 +267,16 @@ Files included in the binary package:
   /usr/share/locale/zh_TW/LC_MESSAGES/gthumb.mo
   /usr/share/man/man1/gthumb.1.gz
   /usr/share/omf/gthumb/gthumb-C.omf
+  /usr/share/omf/gthumb/gthumb-es.omf
+  /usr/share/omf/gthumb/gthumb-fr.omf
   /usr/share/omf/gthumb/gthumb-sv.omf
 
 ------------------
 
 Port Notes:
+
+----- version 2.10.9-1 -----
+Version bump.
 
 ----- version 2.10.8-1 -----
 Version bump.
