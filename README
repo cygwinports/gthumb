@@ -7,7 +7,7 @@ Runtime requirements:
   cygwin-1.5.25-15
   GConf2-2.22.0-1
   gdk-pixbuf2-2.12.11-1
-  glib2-2.16.4-1
+  glib2-2.16.5-1
   gnome-vfs2-2.22.0-1
   gtk2-x11-2.12.11-1
   libart_lgpl2-2.3.20-1
@@ -22,10 +22,10 @@ Runtime requirements:
   libintl8-0.15-1
   libiptcdata0-1.0.2-1
   libjpeg62-6b-12
-  libpng12-1.2.29-1
+  libpng12-1.2.31-1
   libtiff5-3.8.2-3
   libX11_6-1.1.3-1
-  libxml2-2.6.32-1
+  libxml2-2.6.32-2
   libXrender1-0.9.4-1
   libXtst6-1.0.3-1
   ORBit2-2.14.13-1
@@ -37,7 +37,7 @@ Build requirements:
   automake1.10-1.10.1-1
   binutils-20080523-2
   bison-2.3-1
-  cygport-0.3.12-1
+  cygport-0.4.0-1
   flex-2.5.34-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
@@ -59,15 +59,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gthumb-2.10.9-1-src.tar.bz2
+  unpack gthumb-2.10.10-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gthumb-2.10.9-1.cygport all
+  cygport ./gthumb-2.10.10-1.cygport all
 
 This will create:
-  /usr/src/gthumb-2.10.9-1-src.tar.bz2
-  /usr/src/gthumb-2.10.9-1.tar.bz2
+  /usr/src/gthumb-2.10.10-1-src.tar.bz2
+  /usr/src/gthumb-2.10.10-1.tar.bz2
 
 -------------------------------------------
 
@@ -94,13 +94,13 @@ Files included in the binary package:
   /usr/lib/libgthumb.dll.a
   /usr/lib/libgthumb.la
   /usr/share/applications/gthumb.desktop
-  /usr/share/doc/gthumb-2.10.9/AUTHORS
-  /usr/share/doc/gthumb-2.10.9/COPYING
-  /usr/share/doc/gthumb-2.10.9/ChangeLog
-  /usr/share/doc/gthumb-2.10.9/INSTALL
-  /usr/share/doc/gthumb-2.10.9/MAINTAINERS
-  /usr/share/doc/gthumb-2.10.9/NEWS
-  /usr/share/doc/gthumb-2.10.9/README
+  /usr/share/doc/gthumb-2.10.10/AUTHORS
+  /usr/share/doc/gthumb-2.10.10/COPYING
+  /usr/share/doc/gthumb-2.10.10/ChangeLog
+  /usr/share/doc/gthumb-2.10.10/INSTALL
+  /usr/share/doc/gthumb-2.10.10/MAINTAINERS
+  /usr/share/doc/gthumb-2.10.10/NEWS
+  /usr/share/doc/gthumb-2.10.10/README
   /usr/share/gnome/help/gthumb/C/figures/comment.png
   /usr/share/gnome/help/gthumb/C/figures/main-win.png
   /usr/share/gnome/help/gthumb/C/figures/nav-button.png
@@ -274,6 +274,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 2.10.10-1 -----
+Version bump.
 
 ----- version 2.10.9-1 -----
 Version bump.
