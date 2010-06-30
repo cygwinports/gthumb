@@ -1,0 +1,16 @@
+inherit gnome2
+
+DESCRIPTION="GNOME image browser, viewer, organizer, and editor"
+HOMEPAGE="http://gthumb.sourceforge.net/"
+
+PATCH_URI="
+	2.11.4-cygwin.patch
+	2.11.4-jpeg7.patch
+	2.11.4-no-undefined.patch
+"
+
+DEPS_PATH="/usr/lib/gthumb/extensions"
+
+DIFF_EXCLUDES="gthumb-marshal.*"
+
+CYGCONF_ARGS="--disable-libbrasero --enable-libopenraw"

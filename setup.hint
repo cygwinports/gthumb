@@ -1,5 +1,5 @@
 category: Gnome Graphics
-requires: GConf2 libart_lgpl_2_2 libbonobo2_0 libcairo2 libexif12 libgcc1 libgconf2_4 libgdk_pixbuf2.0_0 libglade2.0_0 libglib2.0_0 libgnome2_0 libgnomecanvas2_0 libgnomeui2_0 libgnomevfs2_0 libgtk2.0_0 libintl8 libiptcdata0 libjpeg7 libopenrawgnome1 libORBit2_0 libpango1.0_0 libpng12 libtiff5 libX11_6 libxml2 libXrender1 libXtst6
+requires: GConf2 libcairo2 libclutter-gtk0.10_0 libclutter1.0_0 libexiv2_6 libgcc1 libgconf2_4 libgdk_pixbuf2.0_0 libglib2.0_0 libgnome-keyring0 libgstinterfaces0.10_0 libgstreamer0.10_0 libgtk2.0_0 libintl8 libjpeg7 libopenraw1 libpango1.0_0 libsoup2.4_1 libsoup-gnome2.4_1 libstdc++6 libtiff5 libunique1.0_0 zlib0
 sdesc: "GNOME image browser, viewer, organizer, and editor"
 ldesc: "gThumb is a powerful image browser, viewer, organizer,
 and editor for the GNOME Desktop."

@@ -1,0 +1,14 @@
+--- origsrc/gthumb-2.11.4/extensions/jpeg_utils/transupp-62.c	2010-05-06 02:31:52.000000000 -0500
++++ src/gthumb-2.11.4/extensions/jpeg_utils/transupp-62.c	2010-06-30 01:18:16.745765600 -0500
+@@ -50,11 +50,6 @@
+ #define MAX(a, b)  (((a) > (b)) ? (a) : (b))
+ #endif
+ 
+-#ifdef __CYGWIN__
+-#define height_in_blocks height_in_data_units
+-#define width_in_blocks  width_in_data_units
+-#endif
+-
+ 
+ static long
+ jround_up (long a, long b)
