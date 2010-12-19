@@ -1,0 +1,11 @@
+--- origsrc/gthumb-2.12.1/extensions/image_print/Makefile.am	2010-07-15 13:45:39.000000000 -0500
++++ src/gthumb-2.12.1/extensions/image_print/Makefile.am	2010-12-18 23:57:38.223424400 -0600
+@@ -19,7 +19,7 @@ libimage_print_la_SOURCES = 		\
+ 
+ libimage_print_la_CPPFLAGS = $(GTHUMB_CFLAGS) -I$(top_srcdir) -I$(top_builddir)/gthumb 
+ libimage_print_la_LDFLAGS = $(EXTENSION_LIBTOOL_FLAGS)
+-libimage_print_la_LIBADD = $(GTHUMB_LIBS) 
++libimage_print_la_LIBADD = $(GTHUMB_LIBS) ../image_viewer/libimage_viewer.la
+ libimage_print_la_DEPENDENCIES = $(top_builddir)/gthumb/gthumb$(EXEEXT)
+ 
+ extensioninidir = $(extensiondir)
