@@ -1,3 +1,16 @@
+--- origsrc/gthumb-2.14.0/extensions/Makefile.am	2011-10-17 03:50:17.000000000 -0500
++++ src/gthumb-2.14.0/extensions/Makefile.am	2011-11-18 14:33:52.586097800 -0600
+@@ -45,9 +45,9 @@ SUBDIRS = 			\
+ 	file_viewer		\
+ 	gstreamer_utils		\
+ 	gstreamer_tools		\
+-	image_print		\
+ 	jpeg_utils		\
+ 	$(JPEG_TOOLS)		\
++	image_print		\
+ 	list_tools		\
+ 	map_view		\
+ 	oauth			\
 --- origsrc/gthumb-2.12.1/extensions/image_print/Makefile.am	2010-07-15 13:45:39.000000000 -0500
 +++ src/gthumb-2.12.1/extensions/image_print/Makefile.am	2010-12-18 23:57:38.223424400 -0600
 @@ -19,7 +19,7 @@ libimage_print_la_SOURCES = 		\
