@@ -13,3 +13,5 @@ DEPS_PATH="/usr/lib/gthumb/extensions"
 DIFF_EXCLUDES="gthumb-marshal.*"
 
 CYGCONF_ARGS="--disable-libbrasero --enable-libopenraw"
+
+KEEP_LA_FILES="none"
