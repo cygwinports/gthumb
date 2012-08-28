@@ -1,6 +1,9 @@
 inherit gnome2
 
-DESCRIPTION="GNOME image browser, viewer, organizer, and editor"
+CATEGORY="Gnome Graphics"
+SUMMARY="GNOME image organizer"
+DESCRIPTION="gThumb is a powerful image browser, viewer, organizer,
+and editor for the GNOME Desktop."
 HOMEPAGE="http://gthumb.sourceforge.net/"
 
 PATCH_URI="
