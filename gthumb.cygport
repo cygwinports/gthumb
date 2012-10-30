@@ -1,5 +1,8 @@
 inherit gnome2
 
+NAME="gthumb"
+VERSION=3.0.2
+RELEASE=2
 CATEGORY="Gnome Graphics"
 SUMMARY="GNOME image organizer"
 DESCRIPTION="gThumb is a powerful image browser, viewer, organizer,
