@@ -2,8 +2,8 @@ inherit gnome2
 
 NAME="gthumb"
 VERSION=3.0.2
-RELEASE=2
-CATEGORY="Gnome Graphics"
+RELEASE=3
+CATEGORY="GNOME Graphics"
 SUMMARY="GNOME image organizer"
 DESCRIPTION="gThumb is a powerful image browser, viewer, organizer,
 and editor for the GNOME Desktop."
@@ -14,10 +14,14 @@ PATCH_URI="
 	2.12.1-no-undefined.patch
 "
 
+PKG_NAMES="gthumb gthumb-devel"
+gthumb_CONTENTS="--exclude=*.a --exclude=aclocal etc/ usr/bin/ usr/lib/gthumb/ usr/share/"
+gthumb_devel_SUMMARY="${SUMMARY} (plugin development)"
+gthumb_devel_CONTENTS="usr/include/ usr/lib/gthumb/libgthumb.dll.a usr/lib/pkgconfig/ usr/share/aclocal/"
+
 DEPS_PATH="/usr/lib/gthumb/extensions"
 
 DIFF_EXCLUDES="gthumb-marshal.*"
 
 CYGCONF_ARGS="--disable-libbrasero --enable-libopenraw"
 
-KEEP_LA_FILES="none"

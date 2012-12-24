@@ -1,10 +1,12 @@
 --- origsrc/gthumb-2.11.92/gthumb/Makefile.am	2010-09-12 18:01:21.000000000 -0500
 +++ src/gthumb-2.11.92/gthumb/Makefile.am	2010-09-21 23:28:45.068357900 -0500
-@@ -344,6 +344,7 @@ dist-hook:
+@@ -344,7 +344,8 @@ dist-hook:
  
  if PLATFORM_WIN32
  install-exec-hook:
+-	$(INSTALL_DATA) .libs/libgthumb.a $(DESTDIR)$(pkglibdir)/libgthumb.a
 +	$(MKDIR_P) $(DESTDIR)$(pkglibdir)
- 	$(INSTALL_DATA) .libs/libgthumb.a $(DESTDIR)$(pkglibdir)/libgthumb.a
++	$(INSTALL_DATA) .libs/libgthumb.a $(DESTDIR)$(pkglibdir)/libgthumb.dll.a
  endif
  
+ -include $(top_srcdir)/git.mk
