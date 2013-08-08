@@ -1,0 +1,11 @@
+--- origsrc/gthumb-3.2.3/extensions/image_viewer/Makefile.am	2013-04-30 11:56:12.000000000 -0500
++++ src/gthumb-3.2.3/extensions/image_viewer/Makefile.am	2013-08-08 14:13:48.578596600 -0500
+@@ -16,7 +16,7 @@ libimage_viewer_la_SOURCES = 		\
+ 
+ libimage_viewer_la_CFLAGS = $(GTHUMB_CFLAGS) -I$(top_srcdir) -I$(top_builddir)/gthumb 
+ libimage_viewer_la_LDFLAGS = $(EXTENSION_LIBTOOL_FLAGS)
+-libimage_viewer_la_LIBADD = $(GTHUMB_LIBS)
++libimage_viewer_la_LIBADD = $(GTHUMB_LIBS) $(LIBWEBP_LIBS)
+ if ENABLE_JPEG_TOOLS
+ libimage_viewer_la_LIBADD += ../jpeg_utils/libjpeg_utils.la
+ endif

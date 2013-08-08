@@ -1,8 +1,8 @@
 inherit gnome2
 
 NAME="gthumb"
-VERSION=3.0.2
-RELEASE=3
+VERSION=3.2.3
+RELEASE=1
 CATEGORY="GNOME Graphics"
 SUMMARY="GNOME image organizer"
 DESCRIPTION="gThumb is a powerful image browser, viewer, organizer,
@@ -11,7 +11,9 @@ HOMEPAGE="http://gthumb.sourceforge.net/"
 
 PATCH_URI="
 	2.11.92-cygwin-install.patch
-	2.12.1-no-undefined.patch
+	2.12.1-image_print.patch
+	3.2.3-gstvideo.patch
+	3.2.3-libwebp.patch
 "
 
 PKG_NAMES="gthumb gthumb-devel"
@@ -23,5 +25,10 @@ DEPS_PATH="/usr/lib/gthumb/extensions"
 
 DIFF_EXCLUDES="gthumb-marshal.*"
 
-CYGCONF_ARGS="--disable-libbrasero --enable-libopenraw"
-
+# clutter: not yet on x86-64, only for slideshow effects
+CYGCONF_ARGS="
+	--disable-clutter
+	--disable-libbrasero
+	--enable-libopenraw
+	--with-smclient=xsmp
+"
