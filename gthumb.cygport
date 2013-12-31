@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="gthumb"
-VERSION=3.2.5
+VERSION=3.2.6
 RELEASE=1
 CATEGORY="Graphics"
 SUMMARY="GNOME image organizer"
