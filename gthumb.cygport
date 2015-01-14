@@ -1,8 +1,8 @@
 inherit gnome2
 
 NAME="gthumb"
-VERSION=3.2.7
-RELEASE=2
+VERSION=3.2.8
+RELEASE=1
 CATEGORY="Graphics"
 SUMMARY="GNOME image organizer"
 DESCRIPTION="gThumb is a powerful image browser, viewer, organizer,
@@ -24,9 +24,7 @@ DEPS_PATH="/usr/lib/gthumb/extensions"
 
 DIFF_EXCLUDES="gthumb-marshal.*"
 
-# clutter: not yet on x86-64, only for slideshow effects
 CYGCONF_ARGS="
-	--disable-clutter
 	--disable-libbrasero
 	--enable-libopenraw
 	--with-smclient=xsmp
