@@ -2,7 +2,7 @@ inherit gnome2
 
 NAME="gthumb"
 VERSION=3.2.9.1
-RELEASE=2
+RELEASE=3
 CATEGORY="Graphics"
 SUMMARY="GNOME image organizer"
 DESCRIPTION="gThumb is a powerful image browser, viewer, organizer,
@@ -13,6 +13,7 @@ PATCH_URI="
 	2.11.92-cygwin-install.patch
 	2.12.1-image_print.patch
 	3.2.3-libwebp.patch
+	3.2.9-libopenraw01.patch
 "
 
 PKG_NAMES="gthumb gthumb-devel"

@@ -1,0 +1,11 @@
+--- origsrc/gthumb-3.2.9.1/configure.ac	2015-04-16 13:00:09.000000000 -0500
++++ src/gthumb-3.2.9.1/configure.ac	2017-05-05 04:34:49.242686500 -0500
+@@ -447,7 +447,7 @@ AC_ARG_ENABLE([libopenraw],
+ 
+ if test x$enable_libopenraw = xyes ; then
+ 	PKG_CHECK_MODULES(LIBOPENRAW,
+-			  libopenraw-1.0 >= $OPENRAW_REQUIRED,
++			  libopenraw-0.1 >= $OPENRAW_REQUIRED,
+ 			  [enable_libopenraw=yes],
+ 			  [enable_libopenraw=no])
+ 	if test "x$enable_libopenraw" = "xyes"; then
